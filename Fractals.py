@@ -5,7 +5,7 @@ import os
 
 __author__   = "Carlos Luna-Mota"
 __license__  = "The Unlicense"
-__version__  = "20200428"
+__version__  = "20200429"
 
 
 ### GLOBAL PARAMETERS ##########################################################
@@ -1108,8 +1108,8 @@ def Koch_1(order=7, base_length=0.5, origin=(-575,-100)):
     turtle.color("darkgoldenrod")
     for char in seq:
         if   char == "F": turtle.forward(base_length)
-        elif char == "+": turtle.right(-60)
-        elif char == "-": turtle.left(-60)
+        elif char == "+": turtle.left(60)
+        elif char == "-": turtle.right(60)
 
     # Save the drawing:
     if SAVE_IMAGES:
@@ -1156,8 +1156,108 @@ def Koch_2(order=5, base_length=2, origin=(-300,200)):
     turtle.color("darkgoldenrod")
     for char in seq:
         if   char == "F": turtle.forward(base_length)
-        elif char == "+": turtle.right(-60)
-        elif char == "-": turtle.left(-60)
+        elif char == "+": turtle.left(60)
+        elif char == "-": turtle.right(60)
+
+    # Save the drawing:
+    if SAVE_IMAGES:
+        name = "Fractals/"+name
+        turtle.getscreen().getcanvas().postscript(file=name+".ps")
+        name = name.replace(" ", "\ ")
+        conversion  = "gs -dSAFER -dBATCH -dQUIET -dNOPAUSE -sDEVICE=pngalpha"
+        conversion += " -dEPSCrop -r600 -sOutputFile="+name+".png "+name+".ps"
+        os.system(conversion)
+
+    # Close the window:
+    turtle.exitonclick()
+
+### MINKOWSKI ##################################################################
+
+def Minkowski_1(order=5, base_length=1, origin=(500,25)):
+
+    name = "Minkowski Curve 1"
+
+    # Maximize screen and add a title:
+    screen = turtle.Screen()
+    screen.screensize()
+    screen.setup(width = 1.0, height = 1.0)
+    screen.title(name)
+
+    # Basic turtle setup:
+    turtle.hideturtle()
+    turtle.delay(0)
+    turtle.speed(0)
+
+    # Move the turtle to the origin:
+    turtle.penup()
+    turtle.goto(origin)
+    turtle.left(180)
+    turtle.pendown()
+
+    # Build instructions sequence:
+    seq = "F"
+    for i in range(order):
+        new_seq = ""
+        for char in seq:
+            if   char == "F": new_seq += "F+F-F-FF+F+F-F"
+            else:             new_seq += char
+        seq = new_seq
+
+    # Draw the curve:
+    turtle.color("crimson")
+    for char in seq:
+        if   char == "+": turtle.right(90)
+        elif char == "-": turtle.left(90)
+        else:             turtle.forward(base_length)
+
+    # Save the drawing:
+    if SAVE_IMAGES:
+        name = "Fractals/"+name
+        turtle.getscreen().getcanvas().postscript(file=name+".ps")
+        name = name.replace(" ", "\ ")
+        conversion  = "gs -dSAFER -dBATCH -dQUIET -dNOPAUSE -sDEVICE=pngalpha"
+        conversion += " -dEPSCrop -r600 -sOutputFile="+name+".png "+name+".ps"
+        os.system(conversion)
+
+    # Close the window:
+    turtle.exitonclick()
+
+def Minkowski_2(order=3, base_length=5, origin=(100,200)):
+
+    name = "Minkowski Curve 2"
+
+    # Maximize screen and add a title:
+    screen = turtle.Screen()
+    screen.screensize()
+    screen.setup(width = 1.0, height = 1.0)
+    screen.title(name)
+
+    # Basic turtle setup:
+    turtle.hideturtle()
+    turtle.delay(0)
+    turtle.speed(0)
+
+    # Move the turtle to the origin:
+    turtle.penup()
+    turtle.goto(origin)
+    turtle.left(180)
+    turtle.pendown()
+
+    # Build instructions sequence:
+    seq = "F-F-F-F"
+    for i in range(order):
+        new_seq = ""
+        for char in seq:
+            if   char == "F": new_seq += "F+F-F-FF+F+F-F"
+            else:             new_seq += char
+        seq = new_seq
+
+    # Draw the curve:
+    turtle.color("crimson")
+    for char in seq:
+        if   char == "+": turtle.right(90)
+        elif char == "-": turtle.left(90)
+        else:             turtle.forward(base_length)
 
     # Save the drawing:
     if SAVE_IMAGES:
@@ -1207,10 +1307,10 @@ def Sierpinski_1(order=8, base_length=3, origin=(-425,-300)):
     # Draw the curve:
     turtle.color("darkgreen")
     for char in seq:
-        if   char == "+": turtle.right(-60)
-        elif char == "-": turtle.left(-60)
+        if   char == "+": turtle.left(60)
+        elif char == "-": turtle.right(60)
         else:             turtle.forward(base_length)
-        
+
     # Save the drawing:
     if SAVE_IMAGES:
         name = "Fractals/"+name
@@ -1259,8 +1359,8 @@ def Sierpinski_2(order=8, base_length=3, origin=(-425,-300)):
     color = "darkgreen"
     turtle.color(color)
     for char in seq:
-        if   char == "+": turtle.right(-60)
-        elif char == "-": turtle.left(-60)
+        if   char == "+": turtle.left(60)
+        elif char == "-": turtle.right(60)
         else:
             turtle.forward(base_length)
             i += 1
@@ -1269,7 +1369,7 @@ def Sierpinski_2(order=8, base_length=3, origin=(-425,-300)):
                 else:                    color = "darkgreen"
                 turtle.color(color)
                 j *= 3
-            
+
     # Save the drawing:
     if SAVE_IMAGES:
         name = "Fractals/"+name
@@ -1320,7 +1420,7 @@ def Sierpinski_3(order=8, base_length=3, origin=(-50,-300)):
         if   char == "+": turtle.right(60)
         elif char == "-": turtle.left(60)
         else:             turtle.forward(base_length)
-    
+
     if order % 2: turtle.right(120)
 
     # Draw the second curve:
@@ -1338,7 +1438,7 @@ def Sierpinski_3(order=8, base_length=3, origin=(-50,-300)):
         if   char == "+": turtle.right(60)
         elif char == "-": turtle.left(60)
         else:             turtle.forward(base_length)
-        
+
     # Save the drawing:
     if SAVE_IMAGES:
         name = "Fractals/"+name
@@ -1355,7 +1455,7 @@ def Sierpinski_3(order=8, base_length=3, origin=(-50,-300)):
 
 if __name__ == "__main__":
 
-    #Dragon_1()
+    Dragon_1()
     #Dragon_2()
     #Dragon_twins_1()
     #Dragon_twins_2()
@@ -1383,8 +1483,11 @@ if __name__ == "__main__":
     #Koch_1()
     #Koch_2()
 
+    #Minkowski_1()
+    #Minkowski_2()
+
     #Sierpinski_1()
     #Sierpinski_2()
-    Sierpinski_3()
+    #Sierpinski_3()
 
 ################################################################################

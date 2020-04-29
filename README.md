@@ -98,16 +98,25 @@ Some well known fractal curves.
 
  <img src="Fractals/Koch Curve 2.png" width="600">
 
+
+ * Minkowski_1(order, base_length, origin)
+
+ <img src="Fractals/Minkowski Curve 1.png" width="600">
+ 
+ * Minkowski_2(order, base_length, origin)
+
+ <img src="Fractals/Minkowski Curve 2.png" width="600">
+
  
  * Sierpinski_1(order, base_length, origin)
 
- <img src="Fractals/Sierpinski Curve 1.png" width="600">
+ <img src="Fractals/Sierpinski Arrowhead Curve 1.png" width="600">
  
  * Sierpinski_2(order, base_length, origin)
 
- <img src="Fractals/Sierpinski Curve 2.png" width="600">
+ <img src="Fractals/Sierpinski Arrowhead Curve 2.png" width="600">
  
  * Sierpinski_3(order, base_length, origin)
 
- <img src="Fractals/Sierpinski Curve 3.png" width="600">
+ <img src="Fractals/Sierpinski Arrowhead Curve 3.png" width="600">
  
