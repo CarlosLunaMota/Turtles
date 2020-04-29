@@ -24,6 +24,10 @@ Some well known fractal curves.
 
  <img src="Fractals/Dragon Curve - Twins 2.png" width="600">
  
+ * Dragon_twins_3(order, base_length, origin)
+
+ <img src="Fractals/Dragon Curve - Twins 3.png" width="600">
+ 
  * Dragon_quadruplets_1(order, base_length, origin)
 
  <img src="Fractals/Dragon Curve - Quadruplets 1.png" width="600">
@@ -85,4 +89,25 @@ Some well known fractal curves.
 
  <img src="Fractals/Lebesgue Curve 2.png" width="600">
  
+ 
+ * Koch_1(order, base_length, origin)
+
+ <img src="Fractals/Koch Curve 1.png" width="600">
+ 
+ * Koch_2(order, base_length, origin)
+
+ <img src="Fractals/Koch Curve 2.png" width="600">
+
+ 
+ * Sierpinski_1(order, base_length, origin)
+
+ <img src="Fractals/Sierpinski Curve 1.png" width="600">
+ 
+ * Sierpinski_2(order, base_length, origin)
+
+ <img src="Fractals/Sierpinski Curve 2.png" width="600">
+ 
+ * Sierpinski_3(order, base_length, origin)
+
+ <img src="Fractals/Sierpinski Curve 3.png" width="600">
  
