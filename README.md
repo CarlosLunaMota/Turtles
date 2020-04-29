@@ -1,7 +1,21 @@
 # Turtles
 
-Some drawings made with the Python's turtle.
+Some *turtle-graphics* made with the **turtle** module of Python.
 
+---
+
+## Lissajous.py
+
+Classic compositions of Lissajous curves.
+
+ * composition_1(X, Y, base_lengt)
+
+ <img src="Lissajous/Lissajous Curves 1.png" width="600">
+ 
+ * composition_2(X, Y, base_lengt)
+
+ <img src="Lissajous/Lissajous Curves 2.png" width="600">
+  
 ---
 
 ## Fractals.py
