@@ -1,31 +1,88 @@
 # Turtles
-Several interesting drawings made with the Python's turtle
 
+Some drawings made with the Python's turtle.
+
+---
 
 ## Fractals.py
 
- * Dragon(order, base_length, origin)
+Some well known fractal curves.
 
-![](Dragon Curve.png | width=400)
+ * Dragon_1(order, base_length, origin)
+
+ <img src="Fractals/Dragon Curve 1.png" width="600">
  
- * Dragon_bitone(order, base_length, origin)
+ * Dragon_2(order, base_length, origin)
+
+ <img src="Fractals/Dragon Curve 2.png" width="600">
+ 
  * Dragon_twins_1(order, base_length, origin)
+
+ <img src="Fractals/Dragon Curve - Twins 1.png" width="600">
+ 
  * Dragon_twins_2(order, base_length, origin)
+
+ <img src="Fractals/Dragon Curve - Twins 2.png" width="600">
+ 
  * Dragon_quadruplets_1(order, base_length, origin)
+
+ <img src="Fractals/Dragon Curve - Quadruplets 1.png" width="600">
+ 
  * Dragon_quadruplets_2(order, base_length, origin)
+
+ <img src="Fractals/Dragon Curve - Quadruplets 2.png" width="600">
+ 
  * Dragon_quadruplets_3(order, base_length, origin)
+
+ <img src="Fractals/Dragon Curve - Quadruplets 3.png" width="600">
+ 
  * Dragon_quadruplets_4(order, base_length, origin)
 
- * Terdragon(order, base_length, origin)
- * Terdragon_triplets(order, base_length, origin)
+ <img src="Fractals/Dragon Curve - Quadruplets 4.png" width="600">
+ 
 
- * Gosper(order, base_length, origin)
- * Gospers_heptaplets(order, base_length, origin)
+ * Terdragon_1(order, base_length, origin)
 
- * Fibonacci(order, base_length, origin)
- * Fibonacci_tritone(order, base_length, origin)
+ <img src="Fractals/Terdragon Curve 1.png" width="600">
+ 
+ * Terdragon_2(order, base_length, origin)
 
- * Hilbert(order, base_length, origin)
+ <img src="Fractals/Terdragon Curve 2.png" width="600">
+ 
 
- * Lebesgue(order, base_length, origin)
- * Lebesgue_quadruplets(order, base_length, origin)
+ * Gosper_1(order, base_length, origin)
+
+ <img src="Fractals/Gosper Curve 1.png" width="600">
+ 
+ * Gosper_2(order, base_length, origin)
+
+ <img src="Fractals/Gosper Curve 2.png" width="600">
+ 
+
+ * Fibonacci_1(order, base_length, origin)
+
+ <img src="Fractals/Fibonacci Word Curve 1.png" width="600">
+ 
+ * Fibonacci_2(order, base_length, origin)
+
+ <img src="Fractals/Fibonacci Word Curve 2.png" width="600">
+ 
+
+ * Hilbert_1(order, base_length, origin)
+
+ <img src="Fractals/Hilbert Curve 1.png" width="600">
+
+ * Hilbert_2(order, base_length, origin)
+
+ <img src="Fractals/Hilbert Curve 2.png" width="600">
+ 
+
+ * Lebesgue_1(order, base_length, origin)
+
+ <img src="Fractals/Lebesgue Curve 1.png" width="600">
+ 
+ * Lebesgue_2(order, base_length, origin)
+
+ <img src="Fractals/Lebesgue Curve 2.png" width="600">
+ 
+ 
