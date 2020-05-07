@@ -4,6 +4,26 @@ Some *turtle-graphics* made with the **turtle** module of Python.
 
 ---
 
+## Chaos.py
+
+Chaos game fractals.
+
+ * composition_1()
+
+ <img src="Chaos/Chaotic Fractals.png" width="600">
+   
+---
+
+## Vogel.py
+
+Vogel model.
+
+ * Vogel(angle, k, color, origin, points)
+
+ <img src="Vogel/Vogel Model.png" width="600">
+   
+---
+
 ## Lissajous.py
 
 Classic compositions of Lissajous curves.
@@ -15,7 +35,6 @@ Classic compositions of Lissajous curves.
  * composition_2(X, Y, base_lengt)
 
  <img src="Lissajous/Lissajous Curves 2.png" width="600">
-  
 ---
 
 ## Fractals.py
