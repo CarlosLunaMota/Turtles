@@ -21,7 +21,7 @@ Vogel model.
  * Vogel(angle, k, color, origin, points)
 
  <img src="Vogel/Vogel Model.png" width="600">
-   
+
 ---
 
 ## Lissajous.py
